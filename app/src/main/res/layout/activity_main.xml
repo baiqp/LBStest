@@ -4,11 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.administrator.lbstest.MainActivity">
+    tools:context="com.example.administrator.lbstest.MainActivity"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/position_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+        <!--android:visibility="gone"-->
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bdmapview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"/>
 
 </LinearLayout>
